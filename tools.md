@@ -40,6 +40,9 @@
 ## Docker
  - Что такое Docker? Зачем он нужен? https://docs.docker.com/get-started/
  - Какие лучшие практики по сборке Docker-образов? https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+ - Развернуть стэк AWS локально в докере https://github.com/localstack/localstack
+ - Способы и примеры внедрения утилит для проверки безопасности Docker https://swordfishsecurity.ru/docker-security-scanning-examples
+ - как прибираться за docker https://www.percona.com/blog/2019/08/21/cleaning-docker-disk-space-usage/
 
 ## Kubernetes
  - А можно про k8s по-простому? Kubernetes By Example http://kubernetesbyexample.com/
@@ -47,6 +50,17 @@
 
 ## Tools for developer
  - A web-based, highly extensible platform for developers to better understand the complexity of Kubernetes clusters. https://octant.dev
+
+## Cloud
+### AWS
+ - развернуть стэк AWS локально в докере https://github.com/localstack/localstack
+
+## Security
+ - Способы и примеры внедрения утилит для проверки безопасности Docker https://swordfishsecurity.ru/docker-security-scanning-examples
+
+## Метрики
+ - Сбор метрик через Elasticsearch https://medium.com/qbox-search-as-a-service/monitoring-docker-containers-with-metricbeat-elasticsearch-and-kibana-559c04145372
+
 
 
 ## НЕСОРТИРОВАННОЕ
