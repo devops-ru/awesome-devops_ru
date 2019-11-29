@@ -1,10 +1,18 @@
 # Тулинг
 
+- [Linux](#Linux)
+- [Bash](#Bash)
+- [Виртуализация](#Виртуализация)
+- [Хранилище](#Хранилище)
+  - [CEPH](#CEPH)
+- [LDAP](#LDAP)
+- [Linux](#Linux)
+
 ## Linux
  - Как работает Linux: от нажатия кнопки включения до рабочего стола https://cryptex.club/index.php?threads/377/
 
 ## Bash
- -  Bash-скрипты: начало https://habr.com/ru/company/ruvds/blog/325522
+ - Bash-скрипты: начало https://habr.com/ru/company/ruvds/blog/325522
  - Advanced Bash-Scripting Guide https://www.opennet.ru/docs/RUS/bash_scripting_guide/
 
 ## Виртуализация
@@ -16,7 +24,7 @@
 
 ## Хранилище
 ### CEPH
-  — от "на коленке" до "production" https://habr.com/ru/post/456446/
+ - от "на коленке" до "production" https://habr.com/ru/post/456446/
 
 ## LDAP
  - Руководство по LDAP https://pro-ldap.ru/tr/zytrax/ch1/
