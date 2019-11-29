@@ -9,7 +9,7 @@
 - [Ansible](#Ansible)
 - [Docker](#Docker)
 - [Kubernetes](#Kubernetes)
-- [Tools for developer](#Tools for developer)
+- [Tools for developer](#Tools_for_developer)
 
 ## Linux
  - Как работает Linux: от нажатия кнопки включения до рабочего стола https://cryptex.club/index.php?threads/377/
