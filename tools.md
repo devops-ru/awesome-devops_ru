@@ -6,7 +6,10 @@
 - [Хранилище](#Хранилище)
   - [CEPH](#CEPH)
 - [LDAP](#LDAP)
-- [Linux](#Linux)
+- [Ansible](#Ansible)
+- [Docker](#Docker)
+- [Kubernetes](#Kubernetes)
+- [Tools for developer](#Tools for developer)
 
 ## Linux
  - Как работает Linux: от нажатия кнопки включения до рабочего стола https://cryptex.club/index.php?threads/377/
