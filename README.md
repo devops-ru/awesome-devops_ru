@@ -3,14 +3,14 @@
 - [Что такое DevOps](#что-такое-devops)
 - [Что он решает](#возможности-devops-что-он-решает)
   - [Техники](#Техники)
-    - [Version control](#Version-control)
-    - [Continuous integration](#Continuous-integration)
-    - [Deployment automation](#Deployment-automation)
+    - [Системы контроля версий](#Version-control)
+    - [Непрерывная интеграция](#Continuous-integration)
+    - [Автоматизированный деплой](#Deployment-automation)
     - [Trunk-based development](#Trunk-based-development)
-    - [Test automation](#Test-automation)
-    - [Architecture](#Architecture)
-    - [Empowering teams to choose tools](#Empowering-teams-to-choose-tools)
-    - [Test data management](#Test-data-management)
+    - [Автоматизированные тесты](#Test-automation)
+    - [Архитектура](#Architecture)
+    - [Empowering-teams-to-choose-tools](#Empowering-teams-to-choose-tools)
+    - [Управление тестовыми данными](#Test-data-management)
     - [Shifting left on security](#Shifting-left-on-security)
   - [Процессы](#Процессы)
     - [Team experimentation](#Team-experimentation)
@@ -41,19 +41,19 @@ Improve your performance and become a high performer by improving capabilities s
 ![schema](schema.png)
 
 ### Техники
-####  Version control
+####  Системы контроля версий
 Системы контроля версий, такие как Git, Subversion, и Mercurial предоставляют системы для организации файлов и координировании их создания, обновления и удаления для команд. Эти системы плотно связаны с автоматизацией. Часто, автоматизация и continuous integration построены на этих системах. Для улучшения доставки ПО командам необходимо использовать контроль версий для исходного кода, тестов, скриптов деплоя, конфигураций инстраструктуры и приложений. В системе контроля версий коммманды должны иметь возможность запрашивать текущее (и историческое) состояние своих сред. СКВ также предлагает прямые преимущества, такие как аварийное восстановление и возможность аудита  
 #### материал по теме:
  - git-book https://git-scm.com/book/ru/v2
 ---
-#### Continuous integration
+#### Непрерывная интеграция
 Software systems are complex, and an apparently simple, self-contained change to a single file can have unintended side effects on the overall system. When a large number of developers work on related systems, coordinating code updates is a hard problem, and changes from different developers can be incompatible.  
   
 The practice of continuous integration (CI) was created to address these problems. CI follows the principle that if something takes a lot of time and energy, you should do it more often, forcing you to make it less painful. By creating rapid feedback loops and ensuring that developers work in small batches, CI enables teams to produce high quality software, to reduce the cost of ongoing software development and maintenance, and to increase the productivity of the teams.
 
 ##### материал по теме:
 ---
-#### Deployment automation
+#### Автоматизированный деплой
 
 Deployment automation is what enables you to deploy your software to testing and production environments with the push of a button. Automation is essential to reduce the risk of production deployments. It's also essential for providing fast feedback on the quality of your software by allowing teams to do comprehensive testing as soon as possible after changes.  
   
@@ -82,7 +82,7 @@ The scripts usually perform the following tasks:
 The second pattern is known as trunk-based development, where each developer divides their own work into small batches and merges that work into trunk at least once (and potentially several times) a day. The key difference between these approaches is scope. Feature branches typically involve multiple developers and take days or even weeks of work. In contrast, branches in trunk-based development typically last no more than a few hours, with many developers merging their individual changes into trunk frequently.
 ##### материал по теме:
 ---
-#### Test automation
+#### Автоматизированные тесты
 
 The key to building quality into software is getting fast feedback on the impact of changes. Traditionally, teams used manual code inspection and testing to verify systems' correctness. These inspections and tests occurred after "dev complete," and had the following drawbacks:
   - Manual regression testing is time-consuming to execute and expensive to perform, which makes it a bottleneck in the process. Software can't be released frequently and developers can't get quick feedback.
@@ -91,7 +91,7 @@ The key to building quality into software is getting fast feedback on the impact
 To speed up feedback, the agile development community proposed a set of test automation techniques in the early 2000s. These techniques evolved and are now used in continuous delivery pipelines to provide quick developer feedback, reduce lead time for changes, reduce failure rate, and more.
 ##### материал по теме:
 ---
-#### Architecture
+#### Архитектура
 
 Research from the DevOps Research and Assessment (DORA) team shows that architecture is an important predictor for achieving continuous delivery. Whether you're using Kubernetes or mainframes, your architecture enables teams to adopt practices that foster higher levels of software delivery performance.  
   
