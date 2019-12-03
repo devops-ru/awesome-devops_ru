@@ -1,23 +1,22 @@
 # Awesome devops ru
 - [Введение]()
-- [Что такое DevOps]()
-- [Что он решает]()
-- [Capabilities DevOps]()
-  - [Техники]()
-    - [Version control]()
-    - [Continuous integration]()
-    - [Deployment automation]()
-    - [Trunk-based development]()
-    - [Test automation]()
-    - [Architecture]()
-    - [Empowering teams to choose tools]()
-    - [Test data management]()
-    - [Shifting left on security]()
-  - [Процессы]()
-    - [Team experimentation]()
-    - [Streamlining change approval]()
-    - [Customer feedback]()
-    - [Visibility of work in the value stream]()
+- [Что такое DevOps](что-такое-devops)
+- [Что он решает](возможности-devops--что-он-решает-)
+  - [Техники](Техники)
+    - [Version control](Version-control)
+    - [Continuous integration](Continuous-integration)
+    - [Deployment automation](Deployment-automation)
+    - [Trunk-based development](Trunk-based-development)
+    - [Test automation](Test-automation)
+    - [Architecture](Architecture)
+    - [Empowering teams to choose tools](Empowering-teams-to-choose-tools)
+    - [Test data management](Test-data-management)
+    - [Shifting left on security](Shifting-left-on-security)
+  - [Процессы](Процессы)
+    - [Team experimentation](Team-experimentation)
+    - [Streamlining change approval](Streamlining-change-approval)
+    - [Customer feedback](customer-feedback)
+    - [Visibility of work in the value stream](Visibility-of-work-in-the-value-stream)
     - [Working in small batches]()
   - [Измерения]()
     - [Monitoring systems to inform business decisions]()
@@ -31,12 +30,12 @@
 - [ЧаВо]()
 - [Доп. материалы]()
 
-## Вводная про этот репозиторий
+## Введение
 
-## DevOps (Что такое DevOps)
+## Что такое DevOps
 DevOps is an organizational and cultural movement that aims to increase software delivery velocity, improve service reliability, and build shared ownership among software stakeholders. Learn how to improve the speed, stability, availability, and security of your software delivery capability.
 
-## DevOps capabilities (Что он решает)
+## Возможности DevOps. Что он решает.
 Improve your performance and become a high performer by improving capabilities shown to drive performance improvements. DevOps Research and Assessment (DORA’s) six-year research program has validated a number of technical, process, measurement, and cultural capabilities to drive higher software delivery and organizational performance. Below, you’ll find links to articles on these capabilities, how to implement them, and how to overcome common obstacles.
 
 ![schema](schema.png)
