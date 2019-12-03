@@ -1,8 +1,8 @@
 # Awesome devops ru
-[Введение]()
-[Что такое DevOps]()
-[Что он решает]()
-[Сущности DevOps]()
+- [Введение]()
+- [Что такое DevOps]()
+- [Что он решает]()
+- [Сущности DevOps]()
   - [Техники]()
     - [Version control]()
     - [Continuous integration]()
@@ -28,8 +28,8 @@
     - [Job satisfaction]()
     - [Westrum organizational culture]()
     - [Learning culture]()
-[ЧаВо]()
-[Доп. материалы]()
+- [ЧаВо]()
+- [Доп. материалы]()
 
 ## Вводная про этот репозиторий
 
