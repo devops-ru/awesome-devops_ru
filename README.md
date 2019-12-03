@@ -54,24 +54,24 @@ The practice of continuous integration (CI) was created to address these problem
 ##### материал по теме:
 ---
 #### Deployment automation
+Автоматизация деплоя - это то, что позволяет разворачивать программное обеспечение в тестовых и продуктовых средах "одним нажатием кнопки". Автоматизация необходима для снижения риска при деплое. Это также важно для обеспечения быстрой обратной связи о качестве вашего ПО, позволяя командам провести тестирование, как можно скорее после внесения изменений.
 
-Deployment automation is what enables you to deploy your software to testing and production environments with the push of a button. Automation is essential to reduce the risk of production deployments. It's also essential for providing fast feedback on the quality of your software by allowing teams to do comprehensive testing as soon as possible after changes.  
-  
 An automated deployment process has the following inputs:  
+Автоматический деплой должен иметь следующие входные данные:
   
-  - Packages created by the continuous integration (CI) process (these packages should be deployable to any environment, including production).
-  - Scripts to configure the environment, deploy the packages, and perform a deployment test (sometimes known as a smoke test).
-  - Environment-specific configuration information.
+  - Артифакт созданный системой continuous integration (CI). Это то, что можно развернуть в какой-либо среде. Это может быть Docker образ, tarball и т.д.
+  - Скрипты для настройки приложения, тесты (smoke test)
+  - Конфигурация окружения
   
-We recommend that you store the scripts and configuration information in [version contro](version-controll)l. Your deployment process should download the packages from an artifact repository (for example, Container Registry, Nexus, Artifactory, or your CI tool's built-in repository).  
+Мы рекомендуем хранить скрипты и конфигурация в [СКВ](version-controll). Ваш процесс разворота должен скачать артифакт из какого либо хранилища, например [Nexus](https://www.sonatype.com/nexus-repository-sonatype), [Artifactory](https://jfrog.com/artifactory/) или встроенный в систему CI (например [Gitlab Registry](https://docs.gitlab.com/ee/user/packages/container_registry/))
 
-The scripts usually perform the following tasks:
+Процедура развертывания обычно имеет следующие шаги:
 
-  - Prepare the target environment, perhaps by installing and configuring any necessary software, or by starting up a virtual host from a pre-prepared image in a cloud provider.
-  - Deploy the packages.
-  - Perform any deployment-related tasks such as running database migration scripts.
-  - Perform any required configuration.
-  - Perform a deployment test to make sure that any necessary external services are reachable, and that the system is functioning.
+  - Подготовка целевого окружения, обычно установкой или конфигурированием необходимого ПОб или поднятие виртуальной машины из подготовленного образа.
+  - Разворот артифакта.
+  - Выполнение необходимых задач, например как выполнение миграций баз данных.
+  - Выполнение необходимых конфигураций.
+  - Выполнение тестов для понимания, что все вспомогательные сервисы готовы и система функционирует корректно.
 
 ##### материал по теме:
 ---
