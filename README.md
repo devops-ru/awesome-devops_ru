@@ -1,7 +1,7 @@
 # Awesome devops ru
 - [Введение]()
 - [Что такое DevOps](что-такое-devops)
-- [Что он решает](возможности-devops-что-он-решает)
+- [Что он решает](#возможности-devops-что-он-решает)
   - [Техники](Техники)
     - [Version control](Version-control)
     - [Continuous integration](Continuous-integration)
