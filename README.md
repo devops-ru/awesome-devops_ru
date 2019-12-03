@@ -33,7 +33,10 @@
 ## Введение
 
 ## Что такое DevOps
-DevOps is an organizational and cultural movement that aims to increase software delivery velocity, improve service reliability, and build shared ownership among software stakeholders. Learn how to improve the speed, stability, availability, and security of your software delivery capability.
+DevOps - это организационное и культурное движение, цели которого:
+- увеличить скорость поставки кода
+- улучшить надежность сервиса
+- построить совместное владение сервисом среди всех тех, кто участвует в его разработке
 
 ## Возможности DevOps. Что он решает.
 Improve your performance and become a high performer by improving capabilities shown to drive performance improvements. DevOps Research and Assessment (DORA’s) six-year research program has validated a number of technical, process, measurement, and cultural capabilities to drive higher software delivery and organizational performance. Below, you’ll find links to articles on these capabilities, how to implement them, and how to overcome common obstacles.
