@@ -43,17 +43,17 @@ Improve your performance and become a high performer by improving capabilities s
 
 ### Техники
 ####  Version control
----
 Системы контроля версий, такие как Git, Subversion, и Mercurial предоставляют системы для организации файлов и координировании их создания, обновления и удаления для команд. Эти системы плотно связаны с автоматизацией. Часто, автоматизация и continuous integration построены на этих системах. Для улучшения доставки ПО командам необходимо использовать контроль версий для исходного кода, тестов, скриптов деплоя, конфигураций инстраструктуры и приложений. В системе контроля версий коммманды должны иметь возможность запрашивать текущее (и историческое) состояние своих сред. СКВ также предлагает прямые преимущества, такие как аварийное восстановление и возможность аудита  
 #### Материал
+---
  - git-book https://git-scm.com/book/ru/v2
 #### Continuous integration
----
 Software systems are complex, and an apparently simple, self-contained change to a single file can have unintended side effects on the overall system. When a large number of developers work on related systems, coordinating code updates is a hard problem, and changes from different developers can be incompatible.  
   
 The practice of continuous integration (CI) was created to address these problems. CI follows the principle that if something takes a lot of time and energy, you should do it more often, forcing you to make it less painful. By creating rapid feedback loops and ensuring that developers work in small batches, CI enables teams to produce high quality software, to reduce the cost of ongoing software development and maintenance, and to increase the productivity of the teams.
 
 ##### Материал
+---
 #### Deployment automation
 
 Deployment automation is what enables you to deploy your software to testing and production environments with the push of a button. Automation is essential to reduce the risk of production deployments. It's also essential for providing fast feedback on the quality of your software by allowing teams to do comprehensive testing as soon as possible after changes.  
@@ -75,12 +75,14 @@ The scripts usually perform the following tasks:
   - Perform a deployment test to make sure that any necessary external services are reachable, and that the system is functioning.
 
 ##### Материал
+---
 #### Trunk-based development
 
   There are two main patterns for developer teams to work together using version control. One is to use feature branches, where either a developer or a group of developers create a branch usually from trunk (also known as master or mainline) and then work in isolation on that branch until the feature they are building is complete. When the team considers the feature ready to go, they merge the feature branch back to trunk.  
   
 The second pattern is known as trunk-based development, where each developer divides their own work into small batches and merges that work into trunk at least once (and potentially several times) a day. The key difference between these approaches is scope. Feature branches typically involve multiple developers and take days or even weeks of work. In contrast, branches in trunk-based development typically last no more than a few hours, with many developers merging their individual changes into trunk frequently.
 ##### Материал
+---
 #### Test automation
 
 The key to building quality into software is getting fast feedback on the impact of changes. Traditionally, teams used manual code inspection and testing to verify systems' correctness. These inspections and tests occurred after "dev complete," and had the following drawbacks:
@@ -89,6 +91,7 @@ The key to building quality into software is getting fast feedback on the impact
   - For systems that evolve over time, keeping test documentation up to date requires a considerable effort.  
 To speed up feedback, the agile development community proposed a set of test automation techniques in the early 2000s. These techniques evolved and are now used in continuous delivery pipelines to provide quick developer feedback, reduce lead time for changes, reduce failure rate, and more.
 ##### Материал
+---
 #### Architecture
 
 Research from the DevOps Research and Assessment (DORA) team shows that architecture is an important predictor for achieving continuous delivery. Whether you're using Kubernetes or mainframes, your architecture enables teams to adopt practices that foster higher levels of software delivery performance.  
@@ -110,6 +113,7 @@ With a tightly coupled architecture, small changes can result in large-scale, ca
   
 Microservices architectures are supposed to enable these outcomes, as should any true service-oriented architecture. In practice, many so-called service-oriented architectures don't permit testing and deploying services independently of each other, and thus won’t let teams achieve higher software delivery performance. It's essential to be strict about these outcomes when implementing service-oriented and microservice architectures.
 ##### Материал
+---
 #### Empowering teams to choose tools
 
 If you want to achieve higher software delivery performance and increase the job satisfaction of your technical staff, you should empower them to make informed choices about the tools and technologies they use to do their work. Research (PDF) from the DevOps Research and Assessment (DORA) team shows this contributes to better continuous delivery and higher software delivery performance. Teams that can choose their own tools are able to make these choices based on how they work and the tasks they need to perform. No one knows better than practitioners what they need to be effective, so it's not surprising that practitioner tool choice helps to drive better outcomes.  
