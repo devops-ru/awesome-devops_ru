@@ -43,20 +43,19 @@ Improve your performance and become a high performer by improving capabilities s
 
 ### Техники
 ####  Version control
-##### Описание
-Системы контроля версий, такие как Git, Subversion, и Mercurial предоставляют системы для организации файлов и координировании их создания, обновления и удаления для команд. Эти системы плотно связаны с автоматизацией. Часто, автоматизация и continuous integration построены на этих системах. Для улучшения доставки ПО командам необходимо использовать контроль версий для исходного кода, тестов, скриптов деплоя, конфигураций инстраструктуры и приложений. В системе контроля версий коммманды должны иметь возможность запрашивать текущее (и историческое) состояние своих сред. СКВ также предлагает прямые преимущества, такие как аварийное восстановление и возможность аудита  
-##### Материал
-    - git-book https://git-scm.com/book/ru/v2
 ---
+Системы контроля версий, такие как Git, Subversion, и Mercurial предоставляют системы для организации файлов и координировании их создания, обновления и удаления для команд. Эти системы плотно связаны с автоматизацией. Часто, автоматизация и continuous integration построены на этих системах. Для улучшения доставки ПО командам необходимо использовать контроль версий для исходного кода, тестов, скриптов деплоя, конфигураций инстраструктуры и приложений. В системе контроля версий коммманды должны иметь возможность запрашивать текущее (и историческое) состояние своих сред. СКВ также предлагает прямые преимущества, такие как аварийное восстановление и возможность аудита  
+#### Материал
+ - git-book https://git-scm.com/book/ru/v2
 #### Continuous integration
-##### Описание
+---
 Software systems are complex, and an apparently simple, self-contained change to a single file can have unintended side effects on the overall system. When a large number of developers work on related systems, coordinating code updates is a hard problem, and changes from different developers can be incompatible.  
   
 The practice of continuous integration (CI) was created to address these problems. CI follows the principle that if something takes a lot of time and energy, you should do it more often, forcing you to make it less painful. By creating rapid feedback loops and ensuring that developers work in small batches, CI enables teams to produce high quality software, to reduce the cost of ongoing software development and maintenance, and to increase the productivity of the teams.
 
 ##### Материал
 #### Deployment automation
-##### Описание
+
 Deployment automation is what enables you to deploy your software to testing and production environments with the push of a button. Automation is essential to reduce the risk of production deployments. It's also essential for providing fast feedback on the quality of your software by allowing teams to do comprehensive testing as soon as possible after changes.  
   
 An automated deployment process has the following inputs:  
@@ -77,13 +76,13 @@ The scripts usually perform the following tasks:
 
 ##### Материал
 #### Trunk-based development
-##### Описание
+
   There are two main patterns for developer teams to work together using version control. One is to use feature branches, where either a developer or a group of developers create a branch usually from trunk (also known as master or mainline) and then work in isolation on that branch until the feature they are building is complete. When the team considers the feature ready to go, they merge the feature branch back to trunk.  
   
 The second pattern is known as trunk-based development, where each developer divides their own work into small batches and merges that work into trunk at least once (and potentially several times) a day. The key difference between these approaches is scope. Feature branches typically involve multiple developers and take days or even weeks of work. In contrast, branches in trunk-based development typically last no more than a few hours, with many developers merging their individual changes into trunk frequently.
 ##### Материал
 #### Test automation
-##### Описание
+
 The key to building quality into software is getting fast feedback on the impact of changes. Traditionally, teams used manual code inspection and testing to verify systems' correctness. These inspections and tests occurred after "dev complete," and had the following drawbacks:
   - Manual regression testing is time-consuming to execute and expensive to perform, which makes it a bottleneck in the process. Software can't be released frequently and developers can't get quick feedback.
   - Manual tests and inspections are not reliable, because people are poor at repetitive tasks like manual regression tests, and it is hard to predict the impact of changes on a complex software system through inspection.
@@ -91,7 +90,7 @@ The key to building quality into software is getting fast feedback on the impact
 To speed up feedback, the agile development community proposed a set of test automation techniques in the early 2000s. These techniques evolved and are now used in continuous delivery pipelines to provide quick developer feedback, reduce lead time for changes, reduce failure rate, and more.
 ##### Материал
 #### Architecture
-##### Описание
+
 Research from the DevOps Research and Assessment (DORA) team shows that architecture is an important predictor for achieving continuous delivery. Whether you're using Kubernetes or mainframes, your architecture enables teams to adopt practices that foster higher levels of software delivery performance.  
   
 When teams adopt continuous delivery practices, adopting the following architectural practices drives successful outcomes:
@@ -112,13 +111,13 @@ With a tightly coupled architecture, small changes can result in large-scale, ca
 Microservices architectures are supposed to enable these outcomes, as should any true service-oriented architecture. In practice, many so-called service-oriented architectures don't permit testing and deploying services independently of each other, and thus won’t let teams achieve higher software delivery performance. It's essential to be strict about these outcomes when implementing service-oriented and microservice architectures.
 ##### Материал
 #### Empowering teams to choose tools
-##### Описание
+
 If you want to achieve higher software delivery performance and increase the job satisfaction of your technical staff, you should empower them to make informed choices about the tools and technologies they use to do their work. Research (PDF) from the DevOps Research and Assessment (DORA) team shows this contributes to better continuous delivery and higher software delivery performance. Teams that can choose their own tools are able to make these choices based on how they work and the tasks they need to perform. No one knows better than practitioners what they need to be effective, so it's not surprising that practitioner tool choice helps to drive better outcomes.  
   
 Allowing teams to choose tools doesn't mean each team is given free rein to select any tool they want. Introducing technologies without any constraints can increase technical debt and fragility. However, when you combine tool choice with other capabilities—for example, a full view of the system, fast feedback, and the understanding that they are responsible for the code that they write—it helps your technologists make wise decisions about tools they will use and need to support. This pattern has been observed at companies like Google and Netflix, where a preferred technical stack is supported by default. But if a team feels strongly that a different tool or technology is best for their case, they are free to choose it. Teams understand that their choice comes with the understanding that they must also do the work of supporting this new technical stack.
 ##### Материал
 #### Test data management
-##### Описание
+
 [Automated testing](Test automation) is a key component of modern software delivery practices. The ability to execute a comprehensive set of unit, integration, and system tests is essential to verify that your app or service behaves as expected, and can be safely deployed to production. To ensure that your tests are validating realistic scenarios, it's critical to supply the tests with realistic data.  
   
 Test data is important because it's required by all kinds of tests throughout your test suite, including manual and automated tests. Good test data lets you validate common or high value user journeys, test for edge cases, reproduce defects, and simulate errors.  
@@ -126,7 +125,7 @@ Test data is important because it's required by all kinds of tests throughout yo
 However, it's hard to use and manage test data effectively. Over-reliance on data defined outside of test scope can make your tests brittle and increase maintenance costs. Dependencies on external data sources can introduce delays and impact test performance. Copying production data introduces risk because it might contain sensitive information. To address these challenges, you need to manage your test data carefully and strategically.
 ##### Материал
 #### Shifting left on security
-##### Описание
+
 Security is everyone's responsibility. The 2016 State of DevOps Report (PDF) research shows that high-performing teams spend 50 percent less time remediating security issues than low-performing teams. By better integrating information security (InfoSec) objectives into daily work, teams can achieve higher levels of software delivery performance and build more secure systems. This idea is also known as shifting left, because concerns, including security concerns, are addressed earlier in the software development lifecycle (that is, left in a left-to-right schedule diagram).  
   
 In software development, there are at least these four activities: design, develop, test, and release. In a traditional software development cycle, testing (including security testing), happens after development is complete. This typically means that a team discovers significant problems, including architectural flaws, that are expensive to fix.  
@@ -140,44 +139,44 @@ Research from DevOps Research and Assessment (DORA) (PDF) shows that teams can a
 ---
 ### Процессы
 #### Team experimentation
-##### Описание
+
 ##### Материал
 #### Streamlining change approval
-##### Описание
+
 ##### Материал
 #### Customer feedback
-##### Описание
+
 ##### Материал
 #### Visibility of work in the value stream
-##### Описание
+
 ##### Материал
 #### Working in small batches
-##### Описание
+
 ##### Материал
 ---
 ### Измерения
 #### Monitoring systems to inform business decisions
-##### Описание
+
 ##### Материал
 #### Proactive failure notification
-##### Описание
+
 ##### Материал
 #### Work in process limits
-##### Описание
+
 ##### Материал
 #### Visual management capabilities
-##### Описание
+
 ##### Материал
 ---
 ### Культура
 #### Job satisfaction
-##### Описание
+
 ##### Материал
 #### Westrum organizational culture
-##### Описание
+
 ##### Материал
 #### Learning culture
-##### Описание
+
 ##### Материал
 ---
 ### Часто задаваемые вопросы
